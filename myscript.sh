@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # in case we need to reindex the db
-#formatdb -p F -o T -i Escherichia_coli_str_k_12_substr_mg1655.ASM584v2.cds.all.fa
+formatdb -p F -o T -i Escherichia_coli_str_k_12_substr_mg1655.ASM584v2.cds.all.fa
 
 # incorporate some mismatches
 msbar -sequence mysample.fa -count 10 -point 4 -block 0 -codon 0  -o -outseq mysample_mutated.fa
